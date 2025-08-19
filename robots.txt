@@ -1,0 +1,13 @@
+User-agent: *
+# Block purchase/download-related pages
+Disallow: /success.html
+Disallow: /thank-you.html
+
+# Block product metadata and logic
+Disallow: /assets/data/privateProducts-38fhs1m2s3.js
+Disallow: /assets/data/publicProducts.js
+Disallow: /assets/js/productPage.js
+Disallow: /assets/js/productsGrid.js
+Disallow: /assets/js/success.js
+
+

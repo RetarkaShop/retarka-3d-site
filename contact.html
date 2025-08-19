@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Retarka</title>
+  <meta name="description" content="Contact Retarka for 3D model commissions, questions, or collaborations. We respond promptly to all inquiries." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/contact.html" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+
+  <noscript>
+    <div class="bg-red-900 text-white text-center p-4">
+      ⚠️ JavaScript is disabled. Some features may not work properly.
+    </div>
+  </noscript>
+
+  <!-- Header -->
+  <header class="text-center py-8 border-b border-gray-700">
+    <a href="index.html" aria-label="Retarka homepage">
+      <h1 class="text-4xl font-bold">RETARKA</h1>
+    </a>
+    <h2 class="text-lg text-gray-400 mt-2">Buy 3D Characters in Daz3D, Blender and more with Crypto</h2>
+    <nav class="mt-4 space-x-4" aria-label="Main navigation">
+      <a href="index.html" class="text-cyan-400 hover:underline">Home</a>
+      <a href="contact.html" class="text-cyan-400 hover:underline" aria-current="page">Contact / Commission</a>
+      <a href="donate.html" class="text-cyan-400 hover:underline">Donate</a>
+      <a href="https://www.deviantart.com/imRetarka" class="text-cyan-400 hover:underline" target="_blank" rel="noopener">DeviantArt</a>
+      <a href="https://www.renderhub.com/Retarka" class="text-cyan-400 hover:underline" target="_blank" rel="noopener">RenderHub</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow p-6 max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    
+    <p class="text-gray-300 mb-6">
+      If you have questions about a product or want to commission a custom model, contact us below.
+    </p>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow text-white">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Contact form" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <label class="block mb-4">
+          <span class="text-gray-400">Your Name</span>
+          <input type="text" name="name" aria-label="Your name" required
+            class="w-full mt-1 p-2 rounded bg-gray-700 text-white border border-gray-600" />
+        </label>
+
+        <label class="block mb-4">
+          <span class="text-gray-400">Your Email</span>
+          <input type="email" name="email" aria-label="Your email" required
+            class="w-full mt-1 p-2 rounded bg-gray-700 text-white border border-gray-600" />
+        </label>
+
+        <label class="block mb-4">
+          <span class="text-gray-400">Message</span>
+          <textarea name="message" rows="5" aria-label="Your message" required
+            class="w-full mt-1 p-2 rounded bg-gray-700 text-white border border-gray-600"></textarea>
+        </label>
+
+        <div data-netlify-recaptcha="true" class="my-4"></div>
+
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded font-bold w-full">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-700">
+    <p>
+      Also available on 
+      <a href="https://www.deviantart.com/imRetarka" class="underline hover:text-cyan-400" target="_blank" rel="noopener">DeviantArt</a> and 
+      <a href="https://www.renderhub.com/Retarka" class="underline hover:text-cyan-400" target="_blank" rel="noopener">RenderHub</a>
+    </p>
+    &copy; 2025 Retarka. All rights reserved.
+  </footer>
+
+</body>
+</html>

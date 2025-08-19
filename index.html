@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retarka — Buy 3D Characters for DAZ, Blender and More</title>
+  <meta name="description" content="Buy high-quality 3D character models for DAZ Studio, Blender, and more. Pay with crypto. New models added regularly.">
+  <link rel="canonical" href="https://retarka.com/">
+
+  <!-- Open Graph Meta (Facebook, Discord, etc.) -->
+  <meta property="og:title" content="Retarka — 3D Character Store">
+  <meta property="og:description" content="Download or buy premium 3D characters for DAZ, Blender, and more. Crypto payments accepted.">
+  <meta property="og:image" content="https://retarka.com/assets/images/og-banner.jpg"> <!-- Replace with real image -->
+  <meta property="og:url" content="https://retarka.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Retarka — 3D Character Store">
+  <meta name="twitter:description" content="Download or buy premium 3D characters for DAZ, Blender, and more. Crypto payments accepted.">
+  <meta name="twitter:image" content="https://retarka.com/assets/images/og-banner.jpg"> <!-- Replace with real image -->
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+  <noscript>
+    <div style="background: #111; color: #f00; padding: 1rem; text-align: center;">
+      ⚠️ This web page requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+    </div>
+  </noscript>
+
+  <!-- Header -->
+  <header class="text-center py-8 border-b border-gray-700">
+    <a href="index.html"><h1 class="text-4xl font-bold">RETARKA</h1></a>
+    <h2 class="text-lg text-gray-400 mt-2">Buy 3D Characters in Daz3D, Blender and more with Crypto</h2>
+    <nav class="mt-4 space-x-4" role="navigation" aria-label="Main site navigation">
+      <a href="index.html" class="text-cyan-400 hover:underline">Home</a>
+      <a href="contact.html" class="text-cyan-400 hover:underline">Contact / Commission</a>
+      <a href="donate.html" class="text-cyan-400 hover:underline">Donate</a>
+      <a href="https://www.deviantart.com/imRetarka" class="text-cyan-400 hover:underline" target="_blank" rel="noopener">DeviantArt</a>
+      <a href="https://www.renderhub.com/Retarka" class="text-cyan-400 hover:underline" target="_blank" rel="noopener">RenderHub</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow p-6" role="main">
+
+    <!-- Controls -->
+    <div class="max-w-5xl mx-auto mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white placeholder-gray-400" />
+
+      <select id="versionFilter" aria-label="Filter by model version"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white">
+        <option value="all">All Models</option>
+        <option value="blender">Blender</option>
+        <option value="daz">Daz3D</option>
+        <option value="g8">Genesis 8</option>
+        <option value="g8f">Genesis 8 Female</option>
+        <option value="g8m">Genesis 8 Male</option>
+        <option value="g9">Genesis 9</option>
+        <option value="g9f">Genesis 9 Feminine</option>
+        <option value="g9m">Genesis 9 Masculine</option>
+      </select>
+
+      <select id="sortSelect" aria-label="Sort products"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white">
+        <option value="newest">Sort: Newest First</option>
+        <option value="oldest">Sort: Oldest First</option>
+        <option value="priceLowHigh">Sort: Price Low to High</option>
+        <option value="priceHighLow">Sort: Price High to Low</option>
+      </select>
+    </div>
+
+    <div id="noResults" class="text-center text-gray-400 text-lg hidden mb-8">
+      No products found.
+    </div>
+
+    <!-- Product Grid -->
+    <section id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" aria-label="Product Grid"></section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-700" role="contentinfo">
+    <p class="text-sm text-gray-500">
+      Also available on 
+      <a href="https://www.deviantart.com/imRetarka" class="underline hover:text-cyan-400" target="_blank" rel="noopener">DeviantArt</a> and 
+      <a href="https://www.renderhub.com/Retarka" class="underline hover:text-cyan-400" target="_blank" rel="noopener">RenderHub</a>
+    </p>
+    &copy; 2025 Retarka. All rights reserved.
+  </footer>
+
+  <!-- Load product data and script -->
+  <script src="assets/data/publicProducts.js"></script>
+  <script src="assets/js/productsGrid.js"></script>
+</body>
+</html>

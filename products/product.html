@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retarka Product</title>
+
+  <!-- SEO & Meta -->
+  <meta name="description" content="Loading product info..." />
+  <link rel="canonical" href="https://retarka.com/products/product.html" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Retarka Product" />
+  <meta property="og:description" content="3D characters for Daz3D, Blender and more. Buy with crypto." />
+  <meta property="og:image" content="https://retarka.com/assets/images/logo.png" />
+  <meta property="og:url" content="https://retarka.com/products/product.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Retarka Product" />
+  <meta name="twitter:description" content="3D characters for Daz3D, Blender and more. Buy with crypto." />
+  <meta name="twitter:image" content="https://retarka.com/assets/images/logo.png" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Flickity Carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+
+  <style>
+    .carousel-cell {
+      width: 100%;
+      margin-right: 10px;
+    }
+    .carousel-cell img {
+      cursor: zoom-in;
+      max-height: 500px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      display: block;
+    }
+    .carousel {
+      max-height: 500px;
+      overflow: hidden;
+    }
+  </style>
+
+  <!-- Load Products & Logic -->
+  <script src="../assets/data/publicProducts.js"></script>
+  <script src="../assets/js/productPage.js" defer></script>
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+  <noscript>
+    <div style="background: #111; color: #f00; padding: 1rem; text-align: center;">
+      ⚠️ This web page requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+    </div>
+  </noscript>
+
+  <!-- Header -->
+  <header class="text-center py-8 border-b border-gray-700" role="banner">
+    <a href="../index.html"><h1 class="text-4xl font-bold">RETARKA</h1></a>
+    <h2 class="text-lg text-gray-400 mt-2">Buy 3D Characters in Daz3D, Blender and more with Crypto</h2>
+    <nav class="mt-4 space-x-4" aria-label="Main navigation">
+      <a href="../index.html" class="text-cyan-400 hover:underline">Home</a>
+      <a href="../contact.html" class="text-cyan-400 hover:underline">Contact / Commission</a>
+      <a href="../donate.html" class="text-cyan-400 hover:underline">Donate</a>
+      <a href="https://www.deviantart.com/imRetarka" class="text-cyan-400 hover:underline" target="_blank">DeviantArt</a>
+      <a href="https://www.renderhub.com/Retarka" class="text-cyan-400 hover:underline" target="_blank">RenderHub</a>
+    </nav>
+  </header>
+
+  <!-- Dynamic Product Main Content -->
+  <main id="productMain" class="flex-grow max-w-6xl mx-auto w-full px-4 py-8" role="main" aria-label="Product details"></main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-700" role="contentinfo">
+    <p>
+      Also available on 
+      <a href="https://www.deviantart.com/imRetarka" class="underline hover:text-cyan-400" target="_blank">DeviantArt</a> and 
+      <a href="https://www.renderhub.com/Retarka" class="underline hover:text-cyan-400" target="_blank">RenderHub</a>
+    </p>
+    &copy; 2025 Retarka. All rights reserved.
+  </footer>
+
+  <!-- Flickity + Image Modal Script -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

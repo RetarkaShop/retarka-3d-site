@@ -9,3 +9,5 @@ assets/data/privateProducts-38fhs1m2s3.js
 
 # Ignore dependencies (if any later)
 node_modules/
+assets/data/privateProducts-*.js
+assets/data/privateProducts-38fhs1m2s3.js

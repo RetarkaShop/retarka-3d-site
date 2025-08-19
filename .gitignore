@@ -1,0 +1,11 @@
+# Ignore private product files
+assets/data/privateProducts-38fhs1m2s3.js
+
+# Ignore environment files
+*.env
+
+# Ignore system files
+.DS_Store
+
+# Ignore dependencies (if any later)
+node_modules/

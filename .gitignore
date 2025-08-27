@@ -1,5 +1,5 @@
 # Ignore private product files
-assets/data/privateProducts-38fhs1m2s3.js
+assets/data/PrivateProducts.json
 
 # Ignore environment files
 *.env
@@ -9,5 +9,4 @@ assets/data/privateProducts-38fhs1m2s3.js
 
 # Ignore dependencies (if any later)
 node_modules/
-assets/data/privateProducts-*.js
-assets/data/privateProducts-38fhs1m2s3.js
+assets/data/PrivateProducts.json

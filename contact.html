@@ -6,7 +6,7 @@
   <title>Contact - Retarka</title>
   <meta name="description" content="Contact Retarka for 3D model commissions, questions, or collaborations. We respond promptly to all inquiries." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://yourdomain.com/contact.html" />
+  <link rel="canonical" href="https://retarka.com/contact.html" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
 <body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
@@ -41,7 +41,7 @@
     </p>
 
     <div class="bg-gray-800 p-6 rounded-lg shadow text-white">
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Contact form" action="/thank-you.html">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Contact form" action="/thank-you">
         <input type="hidden" name="form-name" value="contact" />
         
         <p class="hidden">
@@ -66,7 +66,10 @@
             class="w-full mt-1 p-2 rounded bg-gray-700 text-white border border-gray-600"></textarea>
         </label>
 
-        <div data-netlify-recaptcha="true" class="my-4"></div>
+        <!-- ✅ Properly embedded Netlify reCAPTCHA -->
+        <div class="my-4">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
 
         <button type="submit" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded font-bold w-full">
           Send Message
